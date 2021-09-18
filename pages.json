@@ -1,0 +1,308 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [{
+			"path": "pages/index/index",
+			"style": {
+				// #ifdef MP 
+				"navigationBarTitleText": "星若云手机",
+				//"navigationStyle": "custom",
+				// #endif 
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent",
+						"searchInput": {
+							"backgroundColor": "rgba(231, 231, 231,.7)",
+							"borderRadius": "16px",
+							"placeholder": "请输入游戏",
+							"disabled": true,
+							"placeholderColor": "#606266"
+						},
+						"buttons": [{
+								"fontSrc": "/static/images/yticon.ttf",
+								"text": "\ue60d",
+								"fontSize": "26",
+								"color": "#303133",
+								"float": "left",
+								"background": "rgba(0,0,0,0)"
+							},
+							{
+								"fontSrc": "/static/images/yticon.ttf",
+								"text": "\ue744",
+								"fontSize": "27",
+								"color": "#303133",
+								"background": "rgba(0,0,0,0)",
+								"redDot": true
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/product/product",
+			"style": {
+				"navigationBarTitleText": "详情展示",
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent"
+					}
+				}
+			}
+		}, {
+			"path": "pages/set/set",
+			"style": {
+				"navigationBarTitleText": "设置"
+			}
+		},
+		{
+			"path": "pages/userinfo/userinfo",
+			"style": {
+				"navigationBarTitleText": "修改资料"
+			}
+		}, {
+			"path": "pages/phone/phone",
+			"style": {
+				"navigationBarTitleText": "设备"
+			}
+		}, {
+			"path": "pages/user/login/login",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleNView": false,
+					"animationType": "slide-in-bottom"
+				}
+			}
+		}, {
+			"path": "pages/user/index/index",
+			"style": {
+				"navigationBarTitleText": "我的",
+				// #ifdef MP
+				"navigationStyle": "custom",
+				// #endif
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"type": "transparent",
+						"buttons": [{
+								"fontSrc": "/static/images/yticon.ttf",
+								"text": "\ue60f",
+								"fontSize": "24",
+								"color": "#303133",
+								"width": "46px",
+								"background": "rgba(0,0,0,0)"
+							},
+							{
+								"fontSrc": "/static/images/yticon.ttf",
+								"text": "\ue744",
+								"fontSize": "28",
+								"color": "#303133",
+								"background": "rgba(0,0,0,0)",
+								"redDot": true
+							}
+						]
+					}
+				}
+			}
+		}, {
+			"path": "pages/detail/detail",
+			"style": {
+				"navigationBarTitleText": "",
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent"
+					}
+				}
+			}
+		}, {
+			"path": "pages/notice/notice",
+			"style": {
+				"navigationBarTitleText": "通知"
+			}
+		}, {
+			"path": "pages/user/register/register",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom", // 隐藏系统导航栏
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/user/retrieve/retrieve",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom", // 隐藏系统导航栏
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/user/updpass/updpass",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom", // 隐藏系统导航栏
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/operate/operate",
+			"style": {
+				"navigationStyle": "custom", // 隐藏系统导航栏
+				"navigationBarTextStyle": "white", // 状态栏字体为白色，只能为 white-白色，black-黑色 二选一
+				"navigationBarTitleText": "星若云手机",
+				"app-plus": {
+					// 将回弹属性关掉
+					"bounce": "none"
+				}
+			}
+		}, {
+			"path": "pages/buy/buy",
+			"style": {
+				"navigationBarTitleText": "体验设备",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/recharge/recharge",
+			"style": {
+				//#ifdef MP-WEIXIN
+				"navigationBarTitleText": "设备充能",
+				//#endif
+				//#ifndef MP-WEIXIN
+				"navigationBarTitleText": "设备续费",
+				//#endif
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/game/game",
+			"style": {
+				"navigationBarTitleText": "选择游戏",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/courses/courses",
+			"style": {
+				"navigationBarTitleText": "萌新教程",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/user/profile/profile",
+			"style": {
+				"navigationBarTitleText": "个人资料",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "uview-ui/components/u-avatar-cropper/u-avatar-cropper",
+			"style": {
+				"navigationBarTitleText": "头像裁剪",
+				"navigationBarBackgroundColor": "#000000"
+			}
+		}, {
+			"path": "pages/user/wxlogin/wxlogin",
+			"style": {
+				"navigationBarTitleText": "微信登录",
+				"enablePullDownRefresh": false
+			}
+
+		}
+		//     ,{
+		//         "path" : "pages/chat/chatroom/chatroom",
+		//         "style" :                                                                                    
+		//         {
+		//             "navigationBarTitleText": "",
+		// "navigationBarBackgroundColor": "#007AFF",
+		// "navigationBarTextStyle": "white",
+		//             "enablePullDownRefresh": false
+		//         }
+
+		//     }
+		//     ,{
+		//         "path" : "pages/chat/index/index",
+		//         "style" :                                                                                    
+		//         {
+		//             "navigationBarTitleText": "咨询中心",
+		// // "navigationBarTextStyle": "white",
+		//             "enablePullDownRefresh": false
+		//         }
+
+		//     }
+		, {
+			"path": "pages/webview/webview",
+			"style": {
+				"navigationBarTitleText": "星若云手机",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/activity/lottery/lottery",
+			"style": {
+				"navigationBarTitleText": "天天幸运大轮盘",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/activity/index/index",
+			"style": {
+				"navigationBarTitleText": "每日活动",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/user/agree/agree",
+			"style": {
+				"navigationBarTitleText": "星若云用户许可协议",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	    ,{
+            "path" : "pages/user/privacy/privacy",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "隐私政策",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "星若云",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#f8f8f8"
+	},
+	"tabBar": {
+		"color": "#C0C4CC",
+		"selectedColor": "#fa436a",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "/static/images/tab-home.png",
+				"selectedIconPath": "/static/images/tab-home-current.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/phone/phone",
+				"iconPath": "/static/images/tab-phone.png",
+				"selectedIconPath": "/static/images/tab-phone-current.png",
+				"text": "设备"
+			},
+			{
+				"pagePath": "pages/user/index/index",
+				"iconPath": "/static/images/tab-my.png",
+				"selectedIconPath": "/static/images/tab-my-current.png",
+				"text": "我的"
+			}
+		]
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "", //模式名称
+			"path": "pages/index/index", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
+	}
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<link rel="icon" href="https://www.xingyue.xin/images/xingyue.png">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="baidu_union_verify" content="c6fe97bc6f18e583dde2af7c198a7e87">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta name="description" content="星若云是星若品牌旗下苹果云手机,一款云端运行的iOS云手机APP,本机即使关机,在云手机上面照样运行。实现强大的手机分身！">
+		<meta name="Keywords" content="云手机跨屏平台,手机分身助手,云端智能平台,广大用户首选云手机">
+		<!-- <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" /> -->
+		<title>
+			<%= htmlWebpackPlugin.options.title %>
+		</title>
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				document.documentElement.style.fontSize = document.documentElement.clientWidth / 20 + 'px'
+			})
+			window.onload = function() {
+				document.addEventListener('touchstart', function(event) {
+					if (event.touches.length > 1) {
+						event.preventDefault();
+					}
+				});
+				var lastTouchEnd = 0;
+				document.addEventListener('touchend', function(event) {
+					var now = (new Date()).getTime();
+					if (now - lastTouchEnd <= 300) {
+						event.preventDefault();
+					}
+					lastTouchEnd = now;
+				}, false);
+				document.addEventListener('gesturestart', function(event) {
+					event.preventDefault();
+				});
+				
+			}
+		</script>
+		<link rel="stylesheet" href="<%= BASE_URL %>static/index.<%= VUE_APP_INDEX_CSS_HASH %>.css" />
+	</head>
+	<body>
+		<noscript>
+			<strong>Please enable JavaScript to continue.</strong>
+		</noscript>
+		<div id="app"></div>
+		<!-- built files will be auto injected -->
+	</body>
+</html>
